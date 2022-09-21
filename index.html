@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <h1>Weather</h1>
+
+    <form class="search">
+        <input type="searchWeather" id="searchWeatherInput" />
+        <button>Search</button>
+    </form>
+
+    <div class="resulWeather">
+        <div class="titleCity">--</div>
+
+        <div class="informationsWeather">
+            <div class="informationTemperature">
+                <div class="temperatureTitle">Temperatura</div>
+                <div class="temperatureNow">-- <sup>ºC</sup></div>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" />
+            </div>
+            <div class="informationsWind">
+                <div class="windTitle">Vento</div>
+                <div class="windNow">-- <span>km/h</span></div>
+                <div class="windBox">
+                    <div class="windToPoint" style="transform: rotate(0deg)"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="warning"></div>
+
+    <footer>Create by Rafael Loureiro</footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
